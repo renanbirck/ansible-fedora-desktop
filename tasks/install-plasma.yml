@@ -1,0 +1,6 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Instalação do KDE Plasma
+      dnf:
+        name: '@Ambiente de trabalho KDE Plasma'
