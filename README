@@ -11,10 +11,12 @@ Como é preciso permissão de root:
     $ ansible-playbook config-desktop.yml --ask-become-pass
 
 ## Configurações realizadas
+### Atualmente:
+* Instalar o KDE Plasma e configurar o gerenciador de login como sendo o sddm
 
-* Mudar o gerenciador de janelas para o Plasma e trocar o GDM para o SDDM
+### Futuramente:
 * Ativar repositórios extras
-* Instalar a "stack" padrão para uso pessoal/desktop (LibreOffice, GIMP, Inkscape, VLC)
+* Instalar a "stack" padrão para uso pessoal/desktop (LibreOffice, GIMP, Inkscape, VLC, alguns outros)
 * Instalar, via flatpak, alguns softwares proprietários (Discord, Zoom, Steam, Spotify)
 * Instalar ferramentas de desenvolvimento (git, vim, vscode, gcc etc...)
 * Instalar algumas ferramentas em linha de comando (tmux, weechat, vim, zsh)
