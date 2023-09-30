@@ -8,7 +8,7 @@ Configurar um desktop Fedora, usando o Plasma como gerenciador de janelas, com a
 
 Como é preciso permissão de root: 
 
-    $ ansible-playbook config-desktop.yml --ask-become-pass
+    $ ansible-playbook -K config-desktop.yml
 
 ## Configurações realizadas
 ### Atualmente:

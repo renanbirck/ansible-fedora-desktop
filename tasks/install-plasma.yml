@@ -3,4 +3,4 @@
   tasks:
     - name: Instalação do KDE Plasma
       dnf:
-        name: '@Ambiente de trabalho KDE Plasma'
+        name: '@KDE Plasma Workspaces'

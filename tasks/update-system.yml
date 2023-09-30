@@ -1,6 +1,13 @@
 - hosts: localhost
   become: true
   tasks:
+    - name: Ativar opção fastestmirror no dnf
+      ini_file:
+        path: /etc/dnf/dnf.conf
+        section: main
+        option: fastestmirror
+        value: true
+
     - name: Atualizar o sistema.
       dnf:
         name: "*"
