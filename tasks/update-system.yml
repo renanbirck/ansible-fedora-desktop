@@ -12,3 +12,14 @@
       dnf:
         name: "*"
         state: latest
+
+    # TODO: ver se tem como fazer ser independente da versão do SO
+    - name: ativar RPM Fusion
+      dnf:
+        name: https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-38.noarch.rpm
+        state: present
+
+    - name: ativar RPM Fusion (nonfree)
+      dnf:
+        name: https://mirrors.rpmfusion.org/free/fedora/rpmfusion-nonfree-release-38.noarch.rpm
+        state: present

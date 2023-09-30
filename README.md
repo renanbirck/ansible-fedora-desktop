@@ -1,11 +1,9 @@
 ansible-fedora-desktop: configurar um desktop Fedora 
 
 ## Objetivo
-
 Configurar um desktop Fedora, usando o Plasma como ambiente de desktop, com as ferramentas que uso no meu dia-a-dia profissional e pessoal. 
 
 ## Uso
-
 Como é preciso permissão de root: 
 
     $ ansible-playbook -K config-desktop.yml
@@ -25,5 +23,5 @@ Como é preciso permissão de root:
 A partir daqui, o desktop já estará em uma condição inicial na qual é possível restaurar os backups da /home e sair usando, talvez sendo necessário algum ajuste pontual.
 
 ## TODO
-
-* Verificar uma forma de evitar o uso de `--ask-become-pass`.
+* Verificar como instalar software proprietário distribuído como arquivo executável (`.sh`).
+* Verificar uma forma de evitar o uso de `-K`.
