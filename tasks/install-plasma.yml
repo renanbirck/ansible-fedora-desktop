@@ -12,3 +12,6 @@
       service:
         name: sddm
         enabled: yes
+    - name: Informar o usuário
+      debug:
+        msg: "Você precisará alterar a sessão na tela de login, caso ainda não o tenha feito."

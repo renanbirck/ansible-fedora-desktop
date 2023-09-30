@@ -2,7 +2,7 @@ ansible-fedora-desktop: configurar um desktop Fedora
 
 ## Objetivo
 
-Configurar um desktop Fedora, usando o Plasma como gerenciador de janelas, com as ferramentas que uso no meu dia-a-dia profissional e pessoal. 
+Configurar um desktop Fedora, usando o Plasma como ambiente de desktop, com as ferramentas que uso no meu dia-a-dia profissional e pessoal. 
 
 ## Uso
 
