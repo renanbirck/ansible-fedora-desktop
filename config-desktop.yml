@@ -1,0 +1,6 @@
+---
+
+- name: Atualizar o sistema
+  import_playbook: tasks/update-system.yml
+- name: Instalar o KDE Plasma
+  import_playbook: tasks/install-plasma.yml
