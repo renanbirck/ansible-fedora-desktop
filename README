@@ -1,0 +1,15 @@
+ansible-fedora-desktop: configurar um desktop Fedora 
+
+## Objetivo
+
+Configurar um desktop Fedora, usando o Plasma como gerenciador de janelas, com as ferramentas que uso no meu dia-a-dia profissional e pessoal. 
+
+## Configurações realizadas
+
+* Mudar o gerenciador de janelas para o Plasma
+* Instalar a "stack" padrão para uso pessoal/desktop (LibreOffice, GIMP, Inkscape, VLC)
+* Instalar, via flatpak, alguns softwares proprietários (Discord, Zoom, Steam, Spotify)
+* Instalar algumas ferramentas em linha de comando (tmux, weechat, vim, zsh)
+* Instalar jogos/emuladores (nethack, MAME, DOSBox, snes9x)
+
+A partir daqui, o desktop já estará em uma condição inicial na qual é possível restaurar os backups da /home e sair usando, talvez sendo necessário algum ajuste pontual.
