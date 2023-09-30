@@ -4,3 +4,11 @@
     - name: Instalação do KDE Plasma
       dnf:
         name: '@KDE Plasma Workspaces'
+    - name: Desativar o GDM (GNOME Display Manager)
+      service:
+        name: gdm
+        enabled: no
+    - name: e ativar o SDDM
+      service:
+        name: sddm
+        enabled: yes
