@@ -10,6 +10,7 @@
           - libreoffice-data
           - vlc
           - geany
+          - qalculate-gtk
     - name: Instalação de ferramentas de terminal
       dnf:
         name:
@@ -18,12 +19,15 @@
           - vim
           - emacs
           - git
+          - tmux
+          - nethack  # importante demais
     - name: Instalação de ferramentas de desenvolvimento
       dnf:
         name:
           - gcc
           - gdb
           - make
+          - octave
     - name: Instalação de ambiente de virtualização e emulação
       dnf:
         name:

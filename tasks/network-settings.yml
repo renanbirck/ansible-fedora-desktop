@@ -1,0 +1,25 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Instalar o iwd
+      dnf:
+        name: iwd
+    - name: Substituir o wpa_supplicant pelo iwd
+      ini_file:
+        path: /etc/NetworkManager/conf.d/iwd.conf
+        section: device
+        option: wifi.backend
+        value: iwd
+
+    - name: Instalar vnstat
+      dnf:
+        name: vnstat
+    - name: Ativar o serviço do vnstat
+        service:
+          name: vnstat
+          enabled: yes
+    - name: Selecionar a interface padrão no vnstat
+        lineinfile:
+          path: /etc/vnstat.conf
+          regexp: '^;Interface '
+          line: 'Interface "wlan0"'
