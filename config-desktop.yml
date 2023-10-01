@@ -6,3 +6,5 @@
   import_playbook: tasks/install-plasma.yml
 - name: Instalação de software a partir dos repositórios
   import_playbook: tasks/install-foss.yml
+- name: Configuração de rede com iwd e vnstat
+  import_playbook: tasks/network-settings.yml
