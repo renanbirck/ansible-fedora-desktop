@@ -14,12 +14,13 @@
     - name: Instalar vnstat
       dnf:
         name: vnstat
+
     - name: Ativar o serviço do vnstat
-        service:
+      service:
           name: vnstat
           enabled: yes
     - name: Selecionar a interface padrão no vnstat
-        lineinfile:
+      lineinfile:
           path: /etc/vnstat.conf
           regexp: '^;Interface '
           line: 'Interface "wlan0"'
