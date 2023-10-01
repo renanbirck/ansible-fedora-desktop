@@ -1,0 +1,38 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Instalação de software desktop a partir do respositórios
+      dnf:
+        name:
+          - gimp
+          - inkscape
+          - libreoffice-core
+          - libreoffice-data
+          - vlc
+          - geany
+    - name: Instalação de ferramentas de terminal
+      dnf:
+        name:
+          - zsh
+          - weechat
+          - vim
+          - emacs
+          - git
+    - name: Instalação de ferramentas de desenvolvimento
+      dnf:
+        name:
+          - gcc
+          - gdb
+          - make
+    - name: Instalação de ambiente de virtualização e emulação
+      dnf:
+        name:
+          - virt-manager
+          - dosbox
+          - qmc2
+          - VirtualBox
+    - name: Usuário nos grupos para poder usar o VirtualBox
+      user:
+        name: renan
+        groups: libvirt, vboxusers
+        append: yes
