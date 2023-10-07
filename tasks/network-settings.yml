@@ -1,6 +1,12 @@
 - hosts: localhost
+  vars:
+    desktop_hostname: 'renaissance'  # vc vai ter que personalizar esse aqui para sua máquina
   become: true
   tasks:
+    - name: Definir o hostname
+      hostname:
+        name: '{{ desktop_hostname }}'
+
     - name: Instalar o iwd
       dnf:
         name: iwd

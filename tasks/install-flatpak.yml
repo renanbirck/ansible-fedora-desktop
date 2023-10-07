@@ -1,0 +1,22 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Instalação de software a partir dos flatpaks 
+      community.general.flatpak:
+        name:
+          - us.zoom.Zoom
+          - org.telegram.desktop
+          - org.leocad.LeoCAD
+          - org.mattbas.Glaxnimate
+          - org.famistudio.FamiStudio
+          - org.develz.Crawl
+          - org.darktable.Darktable
+          - com.opera.Opera
+          - net.ankiweb.Anki
+          - net.ankiweb.Anki
+          - io.dbeaver.DBeaverCommunity
+          - com.spotify.Client
+          - com.google.Chrome
+          - com.github.tchx84.Flatseal
+          - com.discordapp.Discord
+

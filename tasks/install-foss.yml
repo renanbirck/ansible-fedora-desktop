@@ -16,7 +16,7 @@
         name:
           - zsh
           - weechat
-          - vim
+          - neovim
           - emacs
           - git
           - tmux

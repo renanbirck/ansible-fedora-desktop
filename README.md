@@ -25,4 +25,5 @@ A partir daqui, o desktop já estará em uma condição inicial na qual é poss�
 ## TODO
 * Verificar como instalar software proprietário distribuído como arquivo executável (`.sh`).
 * Verificar uma forma de evitar o uso de `-K`.
-* Elaborar uma solução para diferentes máquinas, com perfis diferentes de uso
+* Elaborar uma solução para diferentes máquinas, com perfis diferentes de uso. 
+  Acredito que possa ser feito usando-se hosts e variáveis.
