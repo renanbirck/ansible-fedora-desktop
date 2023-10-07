@@ -16,10 +16,11 @@
     # TODO: ver se tem como fazer ser independente da versão do SO
     - name: ativar RPM Fusion
       dnf:
-        name: https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-38.noarch.rpm
+        name: "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ansible_distribution_major_version}}.noarch.rpm"
         state: present
+      when: ansible_distribution == 'Fedora'
 
     - name: ativar RPM Fusion (nonfree)
       dnf:
-        name: https://mirrors.rpmfusion.org/free/fedora/rpmfusion-nonfree-release-38.noarch.rpm
+        name: "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-nonfree-release-{{ansible_distribution_major_version}}.noarch.rpm"
         state: present
