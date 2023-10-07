@@ -13,7 +13,15 @@
         name: "*"
         state: latest
 
-    # TODO: ver se tem como fazer ser independente da versão do SO
+    - name: Chaves GPG do rpmfusion 
+      ansible.builtin.rpm_key:
+        key: "{{ item }}"
+        state: present
+
+      with_items:
+          - https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-free-fedora-2020
+          - https://rpmfusion.org/keys?action=AttachFile&do=get&target=RPM-GPG-KEY-rpmfusion-nonfree-fedora-2020
+
     - name: ativar RPM Fusion
       dnf:
         name: "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ansible_distribution_major_version}}.noarch.rpm"
