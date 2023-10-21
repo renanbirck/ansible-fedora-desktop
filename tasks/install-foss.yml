@@ -1,7 +1,7 @@
 - hosts: localhost
   become: true
   tasks:
-    - name: Instalação de software desktop a partir do respositórios
+    - name: Instalação de software desktop a partir dos repositórios
       dnf:
         name:
           - gimp
@@ -11,6 +11,9 @@
           - vlc
           - geany
           - qalculate-gtk
+          - wine
+          - kdenlive
+          - qbittorrent
     - name: Instalação de ferramentas de terminal
       dnf:
         name:
@@ -18,7 +21,6 @@
           - weechat
           - neovim
           - emacs
-          - git
           - tmux
           - nethack  # importante demais
     - name: Instalação de ferramentas de desenvolvimento
@@ -28,6 +30,7 @@
           - gdb
           - make
           - octave
+          - hugo
     - name: Instalação de ambiente de virtualização e emulação
       dnf:
         name:
@@ -35,6 +38,7 @@
           - dosbox
           - qmc2
           - VirtualBox
+          - qemu-system-ppc  # emulação de Mac clássico
     - name: Usuário nos grupos para poder usar o VirtualBox
       user:
         name: renan

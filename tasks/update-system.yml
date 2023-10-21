@@ -30,5 +30,6 @@
 
     - name: ativar RPM Fusion (nonfree)
       dnf:
-        name: "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-nonfree-release-{{ansible_distribution_major_version}}.noarch.rpm"
+        name: "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ansible_distribution_major_version}}.noarch.rpm"
         state: present
+      when: ansible_distribution == 'Fedora'
