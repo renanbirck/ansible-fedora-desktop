@@ -23,6 +23,7 @@
           - emacs
           - tmux
           - nethack  # importante demais
+          - pdftk-java
     - name: Instalação de ferramentas de desenvolvimento
       dnf:
         name:
@@ -39,6 +40,14 @@
           - qmc2
           - VirtualBox
           - qemu-system-ppc  # emulação de Mac clássico
+    - name: Instalação de utilitários
+      dnf:
+        name:
+          - gparted
+          - htop
+          - nmap
+          - wireshark
+          - qemu-img
     - name: Usuário nos grupos para poder usar o VirtualBox
       user:
         name: renan
