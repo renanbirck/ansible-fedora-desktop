@@ -14,6 +14,16 @@
           - wine
           - kdenlive
           - qbittorrent
+    - name: Instalação de software de aúdio
+      dnf:
+        name:
+          - lmms
+          - qjackctl
+          - qsynth
+          - fluidsynth
+          - hydrogen
+          - audacity
+          - Carla-vst
     - name: Instalação de ferramentas de terminal
       dnf:
         name:
@@ -51,6 +61,7 @@
           - qemu-img
           - edid-decode
           - monitor-edid
+          - ncdu
     - name: Usuário nos grupos para poder usar o VirtualBox
       user:
         name: renan
