@@ -8,6 +8,8 @@ Como é preciso permissão de root:
 
     $ ansible-playbook -K config-desktop.yml
 
+e também é possível rodar os _playbooks_ individualmente.
+
 ## Configurações realizadas
 ### Atualmente:
 * Instalar o KDE Plasma e configurar o gerenciador de login como sendo o sddm

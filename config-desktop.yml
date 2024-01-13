@@ -10,4 +10,5 @@
   import_playbook: tasks/install-flatpak.yml
 - name: Configuração de rede com iwd e vnstat
   import_playbook: tasks/network-settings.yml
-
+- name: Instalação de pacotes proprietários sortidos
+  import_playbook: tasks/install-other-packages

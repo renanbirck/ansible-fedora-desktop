@@ -1,0 +1,10 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: VMware Horizon (VDI) 
+      dnf:
+        name: "https://download3.vmware.com/software/CART24FQ4_LIN64_RPMPkg_2309.1/VMware-Horizon-Client-2309.1-8.11.1-22775487.x64.rpm"
+        state: present
+        disable_gpg_check: true  # Não é o ideal, mas é o que tem pra hoje
+      when: ansible_distribution == 'Fedora'
+
