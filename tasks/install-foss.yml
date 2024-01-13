@@ -51,6 +51,7 @@
           - qmc2
           - VirtualBox
           - qemu-system-ppc  # emulação de Mac clássico
+          - waydroid
     - name: Instalação de utilitários e ferramentas de manutenção
       dnf:
         name:
@@ -62,6 +63,10 @@
           - edid-decode
           - monitor-edid
           - ncdu
+    - name: Instalação de fontes
+      dnf:
+        name:
+          - google-droid-fonts-all
     - name: Usuário nos grupos para poder usar o VirtualBox
       user:
         name: renan
