@@ -1,0 +1,21 @@
+- hosts: localhost
+  become: true
+  tasks:
+    - name: ativar o repo do Tailscale
+      # não encontrei forma de fazer isso nativamente no Ansible.
+      ansible.builtin.command: dnf config-manager --add-repo https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+    - name: instalar o Tailscale
+      dnf:
+        name:
+          - tailscale
+    - name: ativar o serviço no systemd
+      service:
+        name: tailscaled
+        enabled: yes
+    - name: rodar o serviço no systemd
+      service:
+        name: tailscaled
+        state: started 
+    - name: informar o usuário
+      debug:
+        msg: execute "sudo tailscale up" para configurar o Tailscale

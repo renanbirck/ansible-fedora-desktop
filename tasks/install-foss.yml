@@ -63,6 +63,9 @@
           - edid-decode
           - monitor-edid
           - ncdu
+          - nvtop
+          - acpi
+          - powertop
     - name: Instalação de fontes
       dnf:
         name:

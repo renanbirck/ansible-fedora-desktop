@@ -25,8 +25,14 @@
       service:
           name: vnstat
           enabled: yes
+
     - name: Selecionar a interface padrão no vnstat
       lineinfile:
           path: /etc/vnstat.conf
           regexp: '^;Interface '
           line: 'Interface "wlan0"'
+
+    - name: instalar e ativar o sshd (vem por padrão, mas desativado)
+      service:
+          name: sshd
+          enabled: yes
