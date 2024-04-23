@@ -11,6 +11,6 @@
 - name: Configuração de rede com iwd e vnstat
   import_playbook: tasks/network-settings.yml
 - name: Instalação de pacotes proprietários sortidos
-  import_playbook: tasks/install-other-packages
+  import_playbook: tasks/install-other-packages.yml
 - name: Instalação do Tailscale
-  import_playbook: tasks/install-tailscale
+  import_playbook: tasks/install-tailscale.yml

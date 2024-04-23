@@ -7,4 +7,13 @@
         state: present
         disable_gpg_check: true  # Não é o ideal, mas é o que tem pra hoje
       when: ansible_distribution == 'Fedora'
-
+    - name: Google Chrome
+      dnf:
+        name: "https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm"
+        state: present
+      when: ansible_distribution == 'fedora'
+    - name: TeamViewer
+      dnf:
+        name: "https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm"
+        state: present
+      when: ansible_distribution == 'fedora'
