@@ -36,7 +36,7 @@
           - tmux
           - nethack  # importante demais
           - pdftk-java
-          - neofetch
+          - fastfetch 
           - ripgrep
           - mc
     - name: Instalação de ferramentas de desenvolvimento
