@@ -16,6 +16,7 @@
           - qbittorrent
           - xournalpp
           - telegram-desktop
+          - darktable 
     - name: Instalação de software de aúdio
       dnf:
         name:
@@ -26,6 +27,11 @@
           - hydrogen
           - audacity
           - Carla-vst
+    - name: Instalação de jogos
+      dnf:
+        name:
+          - crawl
+          - crawl-tiles
     - name: Instalação de ferramentas de terminal
       dnf:
         name:
@@ -38,6 +44,7 @@
           - pdftk-java
           - fastfetch 
           - ripgrep
+          - bat
           - mc
     - name: Instalação de ferramentas de desenvolvimento
       dnf:
@@ -74,6 +81,7 @@
           - iperf
           - iperf3
           - fdupes
+          - btop
     - name: Instalação de fontes
       dnf:
         name:
