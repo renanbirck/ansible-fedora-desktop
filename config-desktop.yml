@@ -1,5 +1,7 @@
 ---
 
+- name: Configurar roles do Ansible
+  import_playbook: tasks/ansible-setup-roles.yml
 - name: Atualizar o sistema
   import_playbook: tasks/update-system.yml
 - name: Instalar o KDE Plasma

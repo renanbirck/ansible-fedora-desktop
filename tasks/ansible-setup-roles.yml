@@ -1,0 +1,5 @@
+- hosts: localhost
+  become: true
+  tasks: 
+    - name: Instalação dos roles a partir do Ansible-Galaxy
+      command: ansible-galaxy collection install ansible.posix
